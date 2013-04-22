@@ -2,6 +2,7 @@ bin/
 usr/
 CMakeCache.txt
 CMakeFiles/
+test-lib.dir/
 *.cmake
 *.c
 *.o
