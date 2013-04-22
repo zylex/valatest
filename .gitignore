@@ -1,16 +1,11 @@
-Makefile
 bin/
+usr/
 CMakeCache.txt
 CMakeFiles/
 *.cmake
-src/elam
 *.c
 *.o
-unittests
 *~
-CTestTestfile.cmake
-Testing/
-*.png
 *.h
 *.vapi
 *.a
