@@ -5,7 +5,7 @@
 
 using GLib;
 
-namespace vunit.Assertion {
+namespace ValaTest {
 
 	public errordomain AssertionError {
 		ASSERTION_FAILED

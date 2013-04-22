@@ -3,7 +3,7 @@
  * 
  *
  */
-namespace Gee
+namespace ValaTest
 {
     public abstract class TestCase : Object 
     { 
