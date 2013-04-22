@@ -1,0 +1,2 @@
+/usr/bin/ar cr lib../../lib/test-lib.a  CMakeFiles/../../lib/test-lib.dir/assertion.c.o CMakeFiles/../../lib/test-lib.dir/testcase.c.o
+/usr/bin/ranlib lib../../lib/test-lib.a
