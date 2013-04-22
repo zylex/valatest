@@ -42,10 +42,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager
+CMAKE_SOURCE_DIR = /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/tests/lib
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager
+CMAKE_BINARY_DIR = /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/tests/lib
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -70,26 +70,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-.PHONY : test/fast
-
 # The main all target
 all: cmake_check_build_system
-	cd /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager && $(CMAKE_COMMAND) -E cmake_progress_start /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/CMakeFiles /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/tests/lib/CMakeFiles/progress.marks
-	cd /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager && $(MAKE) -f CMakeFiles/Makefile2 tests/lib/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/tests/lib/CMakeFiles /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/tests/lib/CMakeFiles/progress.marks
+	$(MAKE) -f CMakeFiles/Makefile2 all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/tests/lib/CMakeFiles 0
+	sudo mv valatest.h /usr/include/
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager && $(MAKE) -f CMakeFiles/Makefile2 tests/lib/clean
+	$(MAKE) -f CMakeFiles/Makefile2 clean
 .PHONY : clean
 
 # The main clean target
@@ -98,39 +89,38 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager && $(MAKE) -f CMakeFiles/Makefile2 tests/lib/preinstall
+	$(MAKE) -f CMakeFiles/Makefile2 preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager && $(MAKE) -f CMakeFiles/Makefile2 tests/lib/preinstall
+	$(MAKE) -f CMakeFiles/Makefile2 preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-# Convenience name for target.
-tests/lib/CMakeFiles/test-lib.dir/rule:
-	cd /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager && $(MAKE) -f CMakeFiles/Makefile2 tests/lib/CMakeFiles/test-lib.dir/rule
-.PHONY : tests/lib/CMakeFiles/test-lib.dir/rule
+#=============================================================================
+# Target rules for targets named valatest
 
-# Convenience name for target.
-test-lib: tests/lib/CMakeFiles/test-lib.dir/rule
-.PHONY : test-lib
+# Build rule for target.
+valatest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 valatest
+.PHONY : valatest
 
 # fast build rule for target.
-test-lib/fast:
-	cd /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager && $(MAKE) -f tests/lib/CMakeFiles/test-lib.dir/build.make tests/lib/CMakeFiles/test-lib.dir/build
-.PHONY : test-lib/fast
+valatest/fast:
+	$(MAKE) -f CMakeFiles/valatest.dir/build.make CMakeFiles/valatest.dir/build
+.PHONY : valatest/fast
 
 assertion.o: assertion.c.o
 .PHONY : assertion.o
 
 # target to build an object file
 assertion.c.o:
-	cd /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager && $(MAKE) -f tests/lib/CMakeFiles/test-lib.dir/build.make tests/lib/CMakeFiles/test-lib.dir/assertion.c.o
+	$(MAKE) -f CMakeFiles/valatest.dir/build.make CMakeFiles/valatest.dir/assertion.c.o
 .PHONY : assertion.c.o
 
 assertion.i: assertion.c.i
@@ -138,7 +128,7 @@ assertion.i: assertion.c.i
 
 # target to preprocess a source file
 assertion.c.i:
-	cd /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager && $(MAKE) -f tests/lib/CMakeFiles/test-lib.dir/build.make tests/lib/CMakeFiles/test-lib.dir/assertion.c.i
+	$(MAKE) -f CMakeFiles/valatest.dir/build.make CMakeFiles/valatest.dir/assertion.c.i
 .PHONY : assertion.c.i
 
 assertion.s: assertion.c.s
@@ -146,7 +136,7 @@ assertion.s: assertion.c.s
 
 # target to generate assembly for a file
 assertion.c.s:
-	cd /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager && $(MAKE) -f tests/lib/CMakeFiles/test-lib.dir/build.make tests/lib/CMakeFiles/test-lib.dir/assertion.c.s
+	$(MAKE) -f CMakeFiles/valatest.dir/build.make CMakeFiles/valatest.dir/assertion.c.s
 .PHONY : assertion.c.s
 
 testcase.o: testcase.c.o
@@ -154,7 +144,7 @@ testcase.o: testcase.c.o
 
 # target to build an object file
 testcase.c.o:
-	cd /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager && $(MAKE) -f tests/lib/CMakeFiles/test-lib.dir/build.make tests/lib/CMakeFiles/test-lib.dir/testcase.c.o
+	$(MAKE) -f CMakeFiles/valatest.dir/build.make CMakeFiles/valatest.dir/testcase.c.o
 .PHONY : testcase.c.o
 
 testcase.i: testcase.c.i
@@ -162,7 +152,7 @@ testcase.i: testcase.c.i
 
 # target to preprocess a source file
 testcase.c.i:
-	cd /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager && $(MAKE) -f tests/lib/CMakeFiles/test-lib.dir/build.make tests/lib/CMakeFiles/test-lib.dir/testcase.c.i
+	$(MAKE) -f CMakeFiles/valatest.dir/build.make CMakeFiles/valatest.dir/testcase.c.i
 .PHONY : testcase.c.i
 
 testcase.s: testcase.c.s
@@ -170,7 +160,7 @@ testcase.s: testcase.c.s
 
 # target to generate assembly for a file
 testcase.c.s:
-	cd /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager && $(MAKE) -f tests/lib/CMakeFiles/test-lib.dir/build.make tests/lib/CMakeFiles/test-lib.dir/testcase.c.s
+	$(MAKE) -f CMakeFiles/valatest.dir/build.make CMakeFiles/valatest.dir/testcase.c.s
 .PHONY : testcase.c.s
 
 # Help Target
@@ -181,8 +171,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... test"
-	@echo "... test-lib"
+	@echo "... valatest"
 	@echo "... assertion.o"
 	@echo "... assertion.i"
 	@echo "... assertion.s"
@@ -200,6 +189,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

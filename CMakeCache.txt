@@ -120,7 +120,7 @@ CMAKE_OBJCOPY:FILEPATH=/usr/bin/objcopy
 CMAKE_OBJDUMP:FILEPATH=/usr/bin/objdump
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=Project
+CMAKE_PROJECT_NAME:STATIC=valatest
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -173,6 +173,21 @@ Project_BINARY_DIR:STATIC=/home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaMan
 
 //Value Computed by CMake
 Project_SOURCE_DIR:STATIC=/home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/tests/lib
+
+//Path to a program.
+VALA_EXECUTABLE:FILEPATH=/usr/bin/valac
+
+//Dependencies for target
+test-lib_LIB_DEPENDS:STATIC=
+
+//Value Computed by CMake
+valatest_BINARY_DIR:STATIC=/home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/tests/lib
+
+//Dependencies for target
+valatest_LIB_DEPENDS:STATIC=
+
+//Value Computed by CMake
+valatest_SOURCE_DIR:STATIC=/home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/tests/lib
 
 
 ########################
@@ -344,7 +359,11 @@ DEPS_gthread-2.0_PREFIX:INTERNAL=/usr
 DEPS_gthread-2.0_VERSION:INTERNAL=2.36.1
 //Details about finding PkgConfig
 FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/bin/pkg-config][v0.28()]
+//Details about finding Vala
+FIND_PACKAGE_MESSAGE_DETAILS_Vala:INTERNAL=[/usr/bin/valac][v()]
 //ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
 PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: VALA_EXECUTABLE
+VALA_EXECUTABLE-ADVANCED:INTERNAL=1
 __pkg_config_checked_DEPS:INTERNAL=1
 

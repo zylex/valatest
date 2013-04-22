@@ -6,16 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/tests/lib/assertion.c
-glib.h
--
-glib-object.h
--
-stdlib.h
--
-string.h
--
-
 /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/tests/lib/testcase.c
 glib.h
 -

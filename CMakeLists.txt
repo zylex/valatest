@@ -4,6 +4,10 @@ project(valatest)
 
 list(APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake/vala )
 
+find_package(Vala REQUIRED)
+include(ValaVersion)
+ensure_vala_version("0.18.1" MINIMUM)
+include(ValaPrecompile)
 
 set(LIBRARY_OUTPUT_PATH /usr/lib)
 
@@ -30,9 +34,9 @@ PACKAGES
 OPTIONS
     --thread
 GENERATE_VAPI
-    /usr/share/vala/vapi/test-lib
+    /usr/share/vala/vapi/valatest
 GENERATE_HEADER
-    /usr/include/test-lib
+    valatest
 )
 
-add_library(test-lib ${VALA_C})
+add_library(valatest ${VALA_C})

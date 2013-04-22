@@ -38,79 +38,79 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager
+CMAKE_SOURCE_DIR = /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/tests/lib
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager
+CMAKE_BINARY_DIR = /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/tests/lib
 
 # Include any dependencies generated for this target.
-include tests/lib/CMakeFiles/test-lib.dir/depend.make
+include CMakeFiles/test-lib.dir/depend.make
 
 # Include the progress variables for this target.
-include tests/lib/CMakeFiles/test-lib.dir/progress.make
+include CMakeFiles/test-lib.dir/progress.make
 
 # Include the compile flags for this target's objects.
-include tests/lib/CMakeFiles/test-lib.dir/flags.make
+include CMakeFiles/test-lib.dir/flags.make
 
-tests/lib/assertion.c: tests/lib/assertion.vala
-tests/lib/assertion.c: tests/lib/testcase.vala
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating assertion.c, testcase.c, ../../lib/test-lib.vapi, ../../lib/test-lib.h, ../../lib/test-lib_internal.h"
-	cd /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/tests/lib && /usr/bin/valac -C --header=/home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/tests/lib/../../lib/test-lib.h --internal-header=/home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/tests/lib/../../lib/test-lib_internal.h --internal-vapi=../../lib/test-lib.vapi -b /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/tests/lib -d /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/tests/lib --pkg=gee-1.0 --pkg=gio-unix-2.0 --pkg=glib-2.0 --pkg=posix --thread /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/tests/lib/assertion.vala /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/tests/lib/testcase.vala
+assertion.c: assertion.vala
+assertion.c: testcase.vala
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/tests/lib/CMakeFiles $(CMAKE_PROGRESS_1)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating assertion.c, testcase.c, usr/share/vala/vapi/test-lib.vapi, usr/include/test-lib.h, usr/include/test-lib_internal.h"
+	/usr/bin/valac -C --header=/home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/tests/lib//usr/include/test-lib.h --internal-header=/home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/tests/lib//usr/include/test-lib_internal.h --internal-vapi=/usr/share/vala/vapi/test-lib.vapi -b /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/tests/lib -d /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/tests/lib --pkg=gee-1.0 --pkg=gio-unix-2.0 --pkg=glib-2.0 --pkg=posix --thread /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/tests/lib/assertion.vala /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/tests/lib/testcase.vala
 
-tests/lib/testcase.c: tests/lib/assertion.c
+testcase.c: assertion.c
 
-tests/lib/../../lib/test-lib.vapi: tests/lib/assertion.c
+usr/share/vala/vapi/test-lib.vapi: assertion.c
 
-tests/lib/../../lib/test-lib.h: tests/lib/assertion.c
+usr/include/test-lib.h: assertion.c
 
-tests/lib/../../lib/test-lib_internal.h: tests/lib/assertion.c
+usr/include/test-lib_internal.h: assertion.c
 
-tests/lib/CMakeFiles/test-lib.dir/assertion.c.o: tests/lib/CMakeFiles/test-lib.dir/flags.make
-tests/lib/CMakeFiles/test-lib.dir/assertion.c.o: tests/lib/assertion.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/CMakeFiles $(CMAKE_PROGRESS_2)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object tests/lib/CMakeFiles/test-lib.dir/assertion.c.o"
-	cd /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/tests/lib && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/test-lib.dir/assertion.c.o   -c /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/tests/lib/assertion.c
+CMakeFiles/test-lib.dir/assertion.c.o: CMakeFiles/test-lib.dir/flags.make
+CMakeFiles/test-lib.dir/assertion.c.o: assertion.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/tests/lib/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/test-lib.dir/assertion.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/test-lib.dir/assertion.c.o   -c /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/tests/lib/assertion.c
 
-tests/lib/CMakeFiles/test-lib.dir/assertion.c.i: cmake_force
+CMakeFiles/test-lib.dir/assertion.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/test-lib.dir/assertion.c.i"
-	cd /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/tests/lib && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/tests/lib/assertion.c > CMakeFiles/test-lib.dir/assertion.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/tests/lib/assertion.c > CMakeFiles/test-lib.dir/assertion.c.i
 
-tests/lib/CMakeFiles/test-lib.dir/assertion.c.s: cmake_force
+CMakeFiles/test-lib.dir/assertion.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test-lib.dir/assertion.c.s"
-	cd /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/tests/lib && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/tests/lib/assertion.c -o CMakeFiles/test-lib.dir/assertion.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/tests/lib/assertion.c -o CMakeFiles/test-lib.dir/assertion.c.s
 
-tests/lib/CMakeFiles/test-lib.dir/assertion.c.o.requires:
-.PHONY : tests/lib/CMakeFiles/test-lib.dir/assertion.c.o.requires
+CMakeFiles/test-lib.dir/assertion.c.o.requires:
+.PHONY : CMakeFiles/test-lib.dir/assertion.c.o.requires
 
-tests/lib/CMakeFiles/test-lib.dir/assertion.c.o.provides: tests/lib/CMakeFiles/test-lib.dir/assertion.c.o.requires
-	$(MAKE) -f tests/lib/CMakeFiles/test-lib.dir/build.make tests/lib/CMakeFiles/test-lib.dir/assertion.c.o.provides.build
-.PHONY : tests/lib/CMakeFiles/test-lib.dir/assertion.c.o.provides
+CMakeFiles/test-lib.dir/assertion.c.o.provides: CMakeFiles/test-lib.dir/assertion.c.o.requires
+	$(MAKE) -f CMakeFiles/test-lib.dir/build.make CMakeFiles/test-lib.dir/assertion.c.o.provides.build
+.PHONY : CMakeFiles/test-lib.dir/assertion.c.o.provides
 
-tests/lib/CMakeFiles/test-lib.dir/assertion.c.o.provides.build: tests/lib/CMakeFiles/test-lib.dir/assertion.c.o
+CMakeFiles/test-lib.dir/assertion.c.o.provides.build: CMakeFiles/test-lib.dir/assertion.c.o
 
-tests/lib/CMakeFiles/test-lib.dir/testcase.c.o: tests/lib/CMakeFiles/test-lib.dir/flags.make
-tests/lib/CMakeFiles/test-lib.dir/testcase.c.o: tests/lib/testcase.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/CMakeFiles $(CMAKE_PROGRESS_3)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object tests/lib/CMakeFiles/test-lib.dir/testcase.c.o"
-	cd /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/tests/lib && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/test-lib.dir/testcase.c.o   -c /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/tests/lib/testcase.c
+CMakeFiles/test-lib.dir/testcase.c.o: CMakeFiles/test-lib.dir/flags.make
+CMakeFiles/test-lib.dir/testcase.c.o: testcase.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/tests/lib/CMakeFiles $(CMAKE_PROGRESS_3)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/test-lib.dir/testcase.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/test-lib.dir/testcase.c.o   -c /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/tests/lib/testcase.c
 
-tests/lib/CMakeFiles/test-lib.dir/testcase.c.i: cmake_force
+CMakeFiles/test-lib.dir/testcase.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/test-lib.dir/testcase.c.i"
-	cd /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/tests/lib && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/tests/lib/testcase.c > CMakeFiles/test-lib.dir/testcase.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/tests/lib/testcase.c > CMakeFiles/test-lib.dir/testcase.c.i
 
-tests/lib/CMakeFiles/test-lib.dir/testcase.c.s: cmake_force
+CMakeFiles/test-lib.dir/testcase.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test-lib.dir/testcase.c.s"
-	cd /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/tests/lib && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/tests/lib/testcase.c -o CMakeFiles/test-lib.dir/testcase.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/tests/lib/testcase.c -o CMakeFiles/test-lib.dir/testcase.c.s
 
-tests/lib/CMakeFiles/test-lib.dir/testcase.c.o.requires:
-.PHONY : tests/lib/CMakeFiles/test-lib.dir/testcase.c.o.requires
+CMakeFiles/test-lib.dir/testcase.c.o.requires:
+.PHONY : CMakeFiles/test-lib.dir/testcase.c.o.requires
 
-tests/lib/CMakeFiles/test-lib.dir/testcase.c.o.provides: tests/lib/CMakeFiles/test-lib.dir/testcase.c.o.requires
-	$(MAKE) -f tests/lib/CMakeFiles/test-lib.dir/build.make tests/lib/CMakeFiles/test-lib.dir/testcase.c.o.provides.build
-.PHONY : tests/lib/CMakeFiles/test-lib.dir/testcase.c.o.provides
+CMakeFiles/test-lib.dir/testcase.c.o.provides: CMakeFiles/test-lib.dir/testcase.c.o.requires
+	$(MAKE) -f CMakeFiles/test-lib.dir/build.make CMakeFiles/test-lib.dir/testcase.c.o.provides.build
+.PHONY : CMakeFiles/test-lib.dir/testcase.c.o.provides
 
-tests/lib/CMakeFiles/test-lib.dir/testcase.c.o.provides.build: tests/lib/CMakeFiles/test-lib.dir/testcase.c.o
+CMakeFiles/test-lib.dir/testcase.c.o.provides.build: CMakeFiles/test-lib.dir/testcase.c.o
 
 # Object files for target test-lib
 test__lib_OBJECTS = \
@@ -120,31 +120,31 @@ test__lib_OBJECTS = \
 # External object files for target test-lib
 test__lib_EXTERNAL_OBJECTS =
 
-lib/libtest-lib.a: tests/lib/CMakeFiles/test-lib.dir/assertion.c.o
-lib/libtest-lib.a: tests/lib/CMakeFiles/test-lib.dir/testcase.c.o
-lib/libtest-lib.a: tests/lib/CMakeFiles/test-lib.dir/build.make
-lib/libtest-lib.a: tests/lib/CMakeFiles/test-lib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking C static library ../../lib/libtest-lib.a"
-	cd /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/tests/lib && $(CMAKE_COMMAND) -P CMakeFiles/test-lib.dir/cmake_clean_target.cmake
-	cd /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/tests/lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test-lib.dir/link.txt --verbose=$(VERBOSE)
+/usr/lib/libtest-lib.a: CMakeFiles/test-lib.dir/assertion.c.o
+/usr/lib/libtest-lib.a: CMakeFiles/test-lib.dir/testcase.c.o
+/usr/lib/libtest-lib.a: CMakeFiles/test-lib.dir/build.make
+/usr/lib/libtest-lib.a: CMakeFiles/test-lib.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking C static library /usr/lib/libtest-lib.a"
+	$(CMAKE_COMMAND) -P CMakeFiles/test-lib.dir/cmake_clean_target.cmake
+	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test-lib.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-tests/lib/CMakeFiles/test-lib.dir/build: lib/libtest-lib.a
-.PHONY : tests/lib/CMakeFiles/test-lib.dir/build
+CMakeFiles/test-lib.dir/build: /usr/lib/libtest-lib.a
+.PHONY : CMakeFiles/test-lib.dir/build
 
-tests/lib/CMakeFiles/test-lib.dir/requires: tests/lib/CMakeFiles/test-lib.dir/assertion.c.o.requires
-tests/lib/CMakeFiles/test-lib.dir/requires: tests/lib/CMakeFiles/test-lib.dir/testcase.c.o.requires
-.PHONY : tests/lib/CMakeFiles/test-lib.dir/requires
+CMakeFiles/test-lib.dir/requires: CMakeFiles/test-lib.dir/assertion.c.o.requires
+CMakeFiles/test-lib.dir/requires: CMakeFiles/test-lib.dir/testcase.c.o.requires
+.PHONY : CMakeFiles/test-lib.dir/requires
 
-tests/lib/CMakeFiles/test-lib.dir/clean:
-	cd /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/tests/lib && $(CMAKE_COMMAND) -P CMakeFiles/test-lib.dir/cmake_clean.cmake
-.PHONY : tests/lib/CMakeFiles/test-lib.dir/clean
+CMakeFiles/test-lib.dir/clean:
+	$(CMAKE_COMMAND) -P CMakeFiles/test-lib.dir/cmake_clean.cmake
+.PHONY : CMakeFiles/test-lib.dir/clean
 
-tests/lib/CMakeFiles/test-lib.dir/depend: tests/lib/assertion.c
-tests/lib/CMakeFiles/test-lib.dir/depend: tests/lib/testcase.c
-tests/lib/CMakeFiles/test-lib.dir/depend: tests/lib/../../lib/test-lib.vapi
-tests/lib/CMakeFiles/test-lib.dir/depend: tests/lib/../../lib/test-lib.h
-tests/lib/CMakeFiles/test-lib.dir/depend: tests/lib/../../lib/test-lib_internal.h
-	cd /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/tests/lib /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/tests/lib /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/tests/lib/CMakeFiles/test-lib.dir/DependInfo.cmake --color=$(COLOR)
-.PHONY : tests/lib/CMakeFiles/test-lib.dir/depend
+CMakeFiles/test-lib.dir/depend: assertion.c
+CMakeFiles/test-lib.dir/depend: testcase.c
+CMakeFiles/test-lib.dir/depend: usr/share/vala/vapi/test-lib.vapi
+CMakeFiles/test-lib.dir/depend: usr/include/test-lib.h
+CMakeFiles/test-lib.dir/depend: usr/include/test-lib_internal.h
+	cd /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/tests/lib && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/tests/lib /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/tests/lib /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/tests/lib /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/tests/lib /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/tests/lib/CMakeFiles/test-lib.dir/DependInfo.cmake --color=$(COLOR)
+.PHONY : CMakeFiles/test-lib.dir/depend
 

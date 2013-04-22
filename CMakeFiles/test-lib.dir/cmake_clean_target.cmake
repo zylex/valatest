@@ -1,3 +1,3 @@
 FILE(REMOVE_RECURSE
-  "../../lib/libtest-lib.a"
+  "/usr/lib/libtest-lib.a"
 )
