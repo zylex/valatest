@@ -42,10 +42,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/tests/lib
+CMAKE_SOURCE_DIR = /home/zylex/Dropbox/workspace/Vala/valatest
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/tests/lib
+CMAKE_BINARY_DIR = /home/zylex/Dropbox/workspace/Vala/valatest
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -72,10 +72,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/tests/lib/CMakeFiles /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/tests/lib/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zylex/Dropbox/workspace/Vala/valatest/CMakeFiles /home/zylex/Dropbox/workspace/Vala/valatest/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zylex/Dropbox/workspace/Vala/EntropiaLandAreaManager/tests/lib/CMakeFiles 0
-	sudo mv valatest.h /usr/include/
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zylex/Dropbox/workspace/Vala/valatest/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

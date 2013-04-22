@@ -2,8 +2,7 @@ bin/
 usr/
 CMakeCache.txt
 CMakeFiles/
-test-lib.dir/
-*.cmake
+cmake_install.cmake
 *.c
 *.o
 *~
