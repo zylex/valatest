@@ -16,7 +16,7 @@ namespace ValaTest {
      * @param condition the condition to test
      * @param message an optional failure message
      */
-    public static void assert_true(bool condition, string message=null) throws AssertionError {
+    public static void assert_true(bool condition, string message="") throws AssertionError {
         if (!condition) {
             fail(message);
         }
@@ -27,7 +27,7 @@ namespace ValaTest {
      * @param condition the condition to test
      * @param message an optional failure message
      */
-    public static void assert_false(bool condition, string message=null) throws AssertionError {
+    public static void assert_false(bool condition, string message="") throws AssertionError {
         if (condition) {
             fail(message);
         }
@@ -37,7 +37,7 @@ namespace ValaTest {
      * Asserts that an object is null.
      * @param message an optional failure message
      */
-    public static void assert_null(Object obj, string message=null) throws AssertionError {
+    public static void assert_null(Object obj, string message="") throws AssertionError {
         assert_true(obj == null, message);
     }
 
@@ -45,7 +45,7 @@ namespace ValaTest {
      * Asserts that an object is not null.
      * @param message an optional failure message
      */
-    public static void assert_not_null(Object obj, string message=null) throws AssertionError  {
+    public static void assert_not_null(Object obj, string message="") throws AssertionError  {
         assert_true(obj != null, message);
     }
 
@@ -53,7 +53,7 @@ namespace ValaTest {
      * Fails a test.
      * @param message an optional failure message
      */
-    public static void fail(string message=null) throws AssertionError {
+    public static void fail(string message="") throws AssertionError {
         throw new AssertionError.ASSERTION_FAILED(message);
     }
 }
