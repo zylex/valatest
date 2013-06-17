@@ -11,6 +11,8 @@ Vala-0.18.1
 
 CMake 2.8.4
 
+GCC 4.6.3 or Clang 3.2
+
 
 ### Assertions
 * `assert_true(bool)`
