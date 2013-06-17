@@ -12,6 +12,7 @@
 		<package>gobject-2.0</package>
 	</packages>
 	<source-directories>
+		<directory></directory>
 		<directory>src</directory>
 		<directory>vapi</directory>
 	</source-directories>
