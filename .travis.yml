@@ -1,0 +1,2 @@
+before_script: cmake .
+after_script:  make
