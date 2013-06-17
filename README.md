@@ -13,13 +13,29 @@ CMake 2.8.4
 
 
 ### Assertions
-* `assert_true`
-* `assert_false`
-* `assert_null`
-* `assert_not_null`
-* `fail`
+* `assert_true(bool)`
+* `assert_false(bool)`
+* `assert_null(Object)`
+* `assert_not_null(Object)`
+* `fail()`
 
-You can optionally add a message after the condition/object
+Usage:
+
+    using Valatest;
+
+    public void main(string[] args) {
+         assert_true(true);
+         assert_true(1 == 1, "message");
+         assert_false(false);
+         assert_false(1 > 1, "message");
+         assert_null(null);
+         assert_null(null, "message");
+         assert_not_null(new Object());
+         assert_not_null(new Object(), "message");
+         fail();
+         fail("message");
+    }
+```
 
 ### TestCase class
 
