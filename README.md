@@ -7,7 +7,7 @@
 
 ## Requirements
 
-Vala-0.20.1
+Vala-0.18.1
 
 CMake 2.8.4
 
