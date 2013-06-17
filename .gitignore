@@ -1,0 +1,5 @@
+build/
+install_manifest.txt
+.gitignore~
+CMakeCache.txt
+CMakeFiles/
