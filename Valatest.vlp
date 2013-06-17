@@ -1,0 +1,22 @@
+<project version="0.1">
+	<name>Valatest</name>
+	<buildsystem>cmake</buildsystem>
+	<version>
+		<major>0</major>
+		<minor>0</minor>
+		<patch>1</patch>
+	</version>
+	<packages>
+		<package>gio-2.0</package>
+		<package>glib-2.0</package>
+		<package>gobject-2.0</package>
+	</packages>
+	<source-directories>
+		<directory>src</directory>
+		<directory>vapi</directory>
+	</source-directories>
+	<buildsystem-directories>
+		<directory></directory>
+		<directory>cmake</directory>
+	</buildsystem-directories>
+</project>
