@@ -3,3 +3,12 @@ install_manifest.txt
 .gitignore~
 CMakeCache.txt
 CMakeFiles/
+cmake_install.cmake
+*.c
+*.o
+*~
+*.h
+*.vapi
+*.a
+*.so
+Makefile

@@ -42,10 +42,17 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /home/zylex/Dropbox/workspace/Vala/Valatest
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/zylex/Dropbox/workspace/Vala/Valatest
+=======
+CMAKE_SOURCE_DIR = /home/zylex/Dropbox/workspace/Vala/valatest
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /home/zylex/Dropbox/workspace/Vala/valatest
+>>>>>>> 9dbcac3c8c3ce8896cce3870b811a3713a4481ae
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -60,6 +67,7 @@ edit_cache:
 edit_cache/fast: edit_cache
 .PHONY : edit_cache/fast
 
+<<<<<<< HEAD
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
@@ -101,6 +109,8 @@ list_install_components:
 list_install_components/fast: list_install_components
 .PHONY : list_install_components/fast
 
+=======
+>>>>>>> 9dbcac3c8c3ce8896cce3870b811a3713a4481ae
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -113,9 +123,15 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
+<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zylex/Dropbox/workspace/Vala/Valatest/CMakeFiles /home/zylex/Dropbox/workspace/Vala/Valatest/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zylex/Dropbox/workspace/Vala/Valatest/CMakeFiles 0
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zylex/Dropbox/workspace/Vala/valatest/CMakeFiles /home/zylex/Dropbox/workspace/Vala/valatest/CMakeFiles/progress.marks
+	$(MAKE) -f CMakeFiles/Makefile2 all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zylex/Dropbox/workspace/Vala/valatest/CMakeFiles 0
+>>>>>>> 9dbcac3c8c3ce8896cce3870b811a3713a4481ae
 .PHONY : all
 
 # The main clean target
@@ -143,6 +159,7 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+<<<<<<< HEAD
 # Target rules for targets named uninstall
 
 # Build rule for target.
@@ -156,6 +173,8 @@ uninstall/fast:
 .PHONY : uninstall/fast
 
 #=============================================================================
+=======
+>>>>>>> 9dbcac3c8c3ce8896cce3870b811a3713a4481ae
 # Target rules for targets named valatest
 
 # Build rule for target.
@@ -168,6 +187,7 @@ valatest/fast:
 	$(MAKE) -f CMakeFiles/valatest.dir/build.make CMakeFiles/valatest.dir/build
 .PHONY : valatest/fast
 
+<<<<<<< HEAD
 src/valatest-testcase.o: src/valatest-testcase.c.o
 .PHONY : src/valatest-testcase.o
 
@@ -215,6 +235,55 @@ src/valatest.s: src/valatest.c.s
 src/valatest.c.s:
 	$(MAKE) -f CMakeFiles/valatest.dir/build.make CMakeFiles/valatest.dir/src/valatest.c.s
 .PHONY : src/valatest.c.s
+=======
+assertion.o: assertion.c.o
+.PHONY : assertion.o
+
+# target to build an object file
+assertion.c.o:
+	$(MAKE) -f CMakeFiles/valatest.dir/build.make CMakeFiles/valatest.dir/assertion.c.o
+.PHONY : assertion.c.o
+
+assertion.i: assertion.c.i
+.PHONY : assertion.i
+
+# target to preprocess a source file
+assertion.c.i:
+	$(MAKE) -f CMakeFiles/valatest.dir/build.make CMakeFiles/valatest.dir/assertion.c.i
+.PHONY : assertion.c.i
+
+assertion.s: assertion.c.s
+.PHONY : assertion.s
+
+# target to generate assembly for a file
+assertion.c.s:
+	$(MAKE) -f CMakeFiles/valatest.dir/build.make CMakeFiles/valatest.dir/assertion.c.s
+.PHONY : assertion.c.s
+
+testcase.o: testcase.c.o
+.PHONY : testcase.o
+
+# target to build an object file
+testcase.c.o:
+	$(MAKE) -f CMakeFiles/valatest.dir/build.make CMakeFiles/valatest.dir/testcase.c.o
+.PHONY : testcase.c.o
+
+testcase.i: testcase.c.i
+.PHONY : testcase.i
+
+# target to preprocess a source file
+testcase.c.i:
+	$(MAKE) -f CMakeFiles/valatest.dir/build.make CMakeFiles/valatest.dir/testcase.c.i
+.PHONY : testcase.c.i
+
+testcase.s: testcase.c.s
+.PHONY : testcase.s
+
+# target to generate assembly for a file
+testcase.c.s:
+	$(MAKE) -f CMakeFiles/valatest.dir/build.make CMakeFiles/valatest.dir/testcase.c.s
+.PHONY : testcase.c.s
+>>>>>>> 9dbcac3c8c3ce8896cce3870b811a3713a4481ae
 
 # Help Target
 help:
@@ -223,6 +292,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+<<<<<<< HEAD
 	@echo "... install"
 	@echo "... install/local"
 	@echo "... install/strip"
@@ -236,6 +306,16 @@ help:
 	@echo "... src/valatest.o"
 	@echo "... src/valatest.i"
 	@echo "... src/valatest.s"
+=======
+	@echo "... rebuild_cache"
+	@echo "... valatest"
+	@echo "... assertion.o"
+	@echo "... assertion.i"
+	@echo "... assertion.s"
+	@echo "... testcase.o"
+	@echo "... testcase.i"
+	@echo "... testcase.s"
+>>>>>>> 9dbcac3c8c3ce8896cce3870b811a3713a4481ae
 .PHONY : help
 
 
